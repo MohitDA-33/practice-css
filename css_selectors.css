@@ -1,0 +1,38 @@
+/* Element selector */
+p {
+    color: gray;
+    font-size: 18px;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+    font-size: 18px;
+}
+
+/* ID selector */
+#special-note {
+    margin-top:18px;
+    margin-bottom:18px;
+    background-color: darkorange;
+    font-size: 18px;
+}
+
+/* Universal selector */
+* {
+    background-color: white;
+}
+/* Note */
+/* what it does is, it applies styles to all the elements on the page */
+/* one more thing i didnt have any idea of what property i should use, so i used a background color = white,
+you can change if you want to. */
+
+/* Grouping selectors */
+h2, h3, h4 {
+    color: darkblue;
+}
+
+/* Descendant selectors */
+div pre {
+    font-style: italic;
+}
