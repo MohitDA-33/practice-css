@@ -1,2 +1,2 @@
 # Practice-CSS
-Contains all the HTML+CSS practice files, organized by topics
+This repo tracks my CSS learning journey from basics to advanced.
