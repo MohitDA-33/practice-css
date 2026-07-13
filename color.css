@@ -1,0 +1,34 @@
+/* example of Named Color */
+h1 {
+    color: lightseagreen;
+}
+
+/* example of HEX Codes */
+body {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    background-color: #1b1f23;
+}
+
+/* example of RGB(red, green, blue) */
+/* by clicking on the color you can hover on it and select a color of you liking */
+div {
+    color: rgb(230, 200, 130);
+    font-size: 18px;
+}
+
+/* example of RGBA(rgb+alpha) */
+p {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* example of HSL(hue, saturation, lightness) */
+h2 {
+    color: hsl(174, 60%, 55%); 
+}
+
+/* example of HSLA(hsl+alpha) */
+section {
+    color: hsla(174, 40%, 80%, 0.9);
+}
