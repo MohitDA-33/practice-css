@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <meta name="description"
+        content="In this page we will explore the CSS Box Model, its layers and what box sizing means.">
+    <meta name="author" content="Mohit Rajpal">
+    <link rel="stylesheet" href="Box_Model.css">
+</head>
+
+<body>
+    <!-- Box Model ? Every element on the page is a rectangular box in the browser, and the box model defines how the box behaves. -->
+
+    <!-- The box model consists of 4 layers
+     1- Element/Content (innermost layer)
+     2- Padding 
+     3- Border
+     4- Margin (outermost layer) -->
+
+    <!-- Want to see the changes in the output, just right click > inspect > hover over the elements. -->
+
+    <h1>Box Model</h1>
+
+    <p class="white">In this lesson, we will talk about the Box Model, its layers, and what box sizing means</p>
+
+    <div class="card">This is a DIV tag.</div>
+
+    <span>Its a SPAN tag.</span>
+
+    <div class="black">This is an another DIV tag.</div>
+
+    <p class="case">Now, we will explore what is Box-Sizing,
+        by default the value of box sizing is content box,
+        so when you add height and width to content/element, its not added or considered in the padding or border.
+        if you want to consider or add you have to set border-box.</p>
+
+    <div class="box">A DIV tag which box-sizing is Borderbox.</div>
+
+</body>
+
+</html>
