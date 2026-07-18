@@ -1,0 +1,66 @@
+h1 {
+    margin: 21px 20px;
+}
+
+.white {
+    margin: 0px 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+}
+
+/* Through this you can set margin and padding using shorthand/shortcut. */
+
+.card {
+    height: 231px;
+    width: 231px;
+    padding: 20px;
+    background-color: lightseagreen;
+    border: 2px solid black;
+    margin: 20px;
+    font-size: 18px;
+}
+
+/* When you set background color padding is also included in it*/
+
+/* Padding means simply the space outside content, its a space between content and border, it pushes the content inwards,
+ increasing the total box size. */
+
+/* Border - simply an outline outside of padding and content, its also outside of background color as well. */
+
+/* Margin is outside of the box, adding extra space between elements. */
+
+span {
+    height: 23px;
+    width: 23px;
+    margin: 0px 20px;
+    font-size: 18px;
+}
+
+/* This dosent work because inline elements cannot have height and width. but can have margin, border and padding to it */
+
+.black {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-left: 280px;
+    padding-right: 200px;
+    font-size: 18px;
+}
+
+/* You can also set margin, border and padding individually, ex from top, bottom, left and right. */
+
+.case {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.box {
+    width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/* Box sizing = Border box */
