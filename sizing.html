@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this page we will see how different units of CSS works, and how to use them">
+    <meta name="author" content="Mohit Rajpal">
+    <title>Sizing</title>
+    <link rel="stylesheet" href="sizing.css">
+</head>
+
+<body>
+    <h1>Sizing</h1>
+    <!-- There are two categories of units - 1 - Absolute units, 2 - Relative units -->
+
+    <!-- Examples of absolute units, these are the units that do not change on the screen size or parent element.
+      we use them for fixed size elements-->
+    <section>
+        <h2>Absolute units</h2> <!--By default its 1.5 em if you see the font-size, so em = relative to parents font size.
+        lets change it by using pixels as a unit.-->
+
+        <p>This is a paragraph which is using pt as an unit, pt stands for points, which is (1/72 of an inch).</p>
+        <!-- I have used 15pt means, 15/72, which is close to above 20px - 20.8, if you calculate. -->
+
+        <p class="cm">This paragraph has a cm (centimeters) units.</p>
+
+        <div class="mm">Its a DIV tag, which has mm (millimeters) as a unit.</div>
+
+        <p class="inch">This one uses inch as a unit</p>
+        <!-- Physical units like cm, mm, and in are rarely used for responsive web layouts. -->
+    </section>
+
+    <!-- Examples of Relative units, these units are responsive and scale based on parent element, root font size, or viewport size -->
+    <main>
+        <h2>Relative units</h2>
+        <!-- Here i have used em (relative to parents font size). what it does is, <h2> -> parent -> <main> and mains parent ->
+        <body> and body -> main parent is <html> and you can see that html has a font size of 16px, so 1em = 16 px, in this its 2
+        times of 16px = 32 px. -->
+
+        <!--And what if i change the parent font size, you can see that h2 has a parent name -> <main>  -->
+
+        <!--If <main> has a font size of 32 px, h2's font size will be 2 x 32px = 64 px. but for now i have commented it. -->
+
+        <p>This is a paragraph which has % as a unit</p>
+        <!--<main> is also inheriting its font size from html, so its 100% is of html font size, which is 16px -->
+
+        <div>A div whose margin and font size are twice the root font size.</div>
+        <!-- rem (relative to root font size <html>), the root font size is 16px, so 2 rem = 2 x of 16px equaling to 32px of 
+            margin and font size. -->
+
+        <p class="viewport">This is an another paragraph which height and width is set by vw(viewport width) and
+            vh(viewport height) unit.</p>
+        <!-- 1 vw = 1% of the entire width, the same is for height as well. you will notice that the background color takes 50%,
+        of the entire width (entire browser window width) cause the vw is set to 50%. -->
+
+        <p class="minmax">Now lets talk about vmin and vmax. from example, 1vmin = 1% of smaller dimension 8px
+            and 1vmax = 1% of larger dimension 12px.</p>
+        <!-- Landscape screen: 1200px x 800px < - (example),
+         Smaller dimension - 800px
+         Larger dimension - 1200px -->
+
+        <!-- NOTE: the height is the bigger dimensions in phone, and is a smaller dimension in monitor/laptop 
+         the opposite works in width. -->
+
+        <!-- So vmin is going to be height for monitors/laptop and width for phones, and vmax is opposite to vmin in monitor
+         the vmax is width and in a phone its height. -->
+    </main>
+
+    <h2>Calc function()</h2>
+    <div class="calc-example">Now lets see the example of calc function, but what is a calc function</div>
+    <!-- By using calc function you can combine different units using calc(), is it used to make precise calculations.-->
+
+    <!-- NOTE; in relative units its going to show different value everytime when you go through different devices.
+     cause it adjusts itself everytime on a new device, depending thier dimensions. that's what responsive design means. 
+     one more thing to add most of my calculations or adjustments of elements are based on my screen dimensions.-->
+
+</body>
+
+</html>
