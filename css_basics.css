@@ -1,0 +1,5 @@
+/* This is an example of external css, where we use an external stylesheet to style our elements/contents. */
+
+h1{
+    color: darkorange;
+}
